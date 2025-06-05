@@ -1,0 +1,60 @@
+Individual Exercise 3: AI-Assisted Implementation of Game of Life
+Goal
+Implement Conway's Game of Life with a graphical user interface (GUI) using an AI-assisted tool of your choice. This exercise is designed to assess your ability to:
+* Leverage AI tools to generate working software
+* Understand, critique, and adapt generated code or logic
+* Reflect on tool effectiveness, prompt quality, and code quality (if applicable)
+Use this opportunity to explore and critique AI-assisted development — not just to get it done, but to understand how these tools shape the software you build.
+
+
+Allowed Tools
+You may use any AI-assisted tool, including (but not limited to):
+* GitHub Copilot
+* ChatGPT
+* Cursor
+* Codeium
+* Windsurf
+* Base44
+* Lovable
+This includes both code-centric and low-code/no-code platforms.
+Minimum Functionality Requirements
+Your Game of Life implementation must:
+1. Support a 40x40 grid by default, and allow to change the grid size
+2. Let users start/stop the simulation
+3. Let users randomize or clear the grid
+4. Let users toggle individual cells (alive/dead) when simulation is stopped
+5. Allow to control the speed of the simulation
+6. Initialize with a simple pattern (e.g., glider), and allow a library of known patterns (at least 5)
+Bonus Feature (Optional):
+* Implement basic ability to save and restore board states (to/from some storage)
+Deliverables
+You must submit:
+1. The Working Game
+* In the format supported by your chosen tool (e.g., code repo, hosted link, downloadable file)
+* Include clear instructions on how to view/run the deliverable in a readme.md file
+2. Reflection Document (reflection.md)
+Your reflection must include:
+Tool Used
+* Name of the tool
+* Why you selected it
+Prompting Strategy
+* 2–3 example prompts that worked well, and why
+* 1–2 prompts that failed or misfired, and why
+Tool Evaluation
+* Strengths and weaknesses of the tool
+* Where it helped most / where it fell short
+* Any noticeable limitations (e.g., GUI generation, event handling, debugging)
+* How many iterations
+Code Quality (if applicable)
+If your deliverable includes JavaScript or code you modified/generated:
+* Point out areas you manually improved or rewrote
+* Discuss how the code follows Model-View-Controller pattern if at all
+* Discuss issues with modularity, naming, structure, or logic
+Grading Criteria
+* ✅ Fulfillment of minimum feature spec
+* ✅ Clarity and completeness of deliverable
+* ✅ Thoughtful, honest, and critical reflection
+* ✅ Reasoned code analysis (if JS or similar was used)
+
+
+________________
