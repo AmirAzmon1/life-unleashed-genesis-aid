@@ -1,84 +1,55 @@
+# Conway's Game of Life
 
-# Conway's Game of Life - AI-Assisted Implementation
+A modern, interactive implementation of Conway's Game of Life built with React, TypeScript, Vite, and Tailwind CSS.
 
-This is a fully functional implementation of Conway's Game of Life built using Lovable, an AI-assisted development tool. The application features a modern React interface with comprehensive controls and pattern library.
+## Features
+- 40x40 grid by default (customizable)
+- Start/Stop simulation
+- Randomize or clear the grid
+- Toggle individual cells (when stopped)
+- Control simulation speed
+- Pattern library (glider, blinker, beacon, toad, pulsar, and more)
+- Save and load multiple board states (with custom names)
+- Delete saved states
+- All data is stored in your browser (localStorage)
+- Responsive, modern UI
 
-## 🎮 How to View/Run
+## Bonus Feature
+- Save and restore multiple board states with custom names via localStorage
+- Manage all saved boards in a dedicated modal (add, load, delete)
 
-**Option 1: Online (Recommended)**
-- Visit the live application at: [Your Lovable Project URL]
-- The app runs directly in your browser - no installation required!
+## Getting Started
 
-**Option 2: Local Development**
-If you want to run locally:
+### Prerequisites
+- Node.js v18+
+- npm
+
+### Installation
 ```bash
-git clone [your-repo-url]
-cd [project-name]
 npm install
-npm run dev
 ```
 
-## ✨ Features
+### Running the App
+```bash
+npm run dev
+```
+Then open [http://localhost:8080](http://localhost:8080) in your browser.
 
-### Core Functionality
-- **40x40 Grid (Adjustable)**: Default 40x40 grid with ability to change size (10-100)
-- **Simulation Controls**: Start/stop the cellular automata simulation
-- **Cell Editing**: Click individual cells to toggle alive/dead when simulation is stopped
-- **Speed Control**: Adjust simulation speed from 1% to 100%
-- **Grid Operations**: Randomize or clear the entire grid
-- **Generation Counter**: Track how many generations have passed
+## Usage
+- Use the **Controls** panel to start/stop, clear, randomize, and adjust speed/grid size.
+- Use the **Save State** button to save the current board with a custom name.
+- Use the **Load State** button to load or delete any saved board.
+- Use the **Pattern Library** to quickly load classic patterns.
 
-### Pattern Library
-Pre-loaded with 8 classic Game of Life patterns:
-- **Glider**: Simple moving pattern
-- **Blinker**: Basic oscillator
-- **Beacon**: Period-2 oscillator
-- **Toad**: Another period-2 oscillator
-- **Pulsar**: Large period-3 oscillator
-- **Gosper Gun**: Famous glider-producing pattern
-- **Pentadecathlon**: Period-15 oscillator
-- **Lightweight Spaceship**: Moving spaceship pattern
+## Project Structure
+- `src/components/` — UI components (GameOfLife, GameControls, GameGrid, PatternLibrary, SavedBoardsModal)
+- `src/hooks/useGameOfLife.ts` — Game logic and state management
+- `src/utils/gameLogic.ts` — Pure functions for Game of Life rules
+- `src/context/GameContext.tsx` — Global state/context
 
-### Bonus Features
-- **Save/Restore States**: Save current board state to local storage and restore later
-- **Responsive Design**: Works on desktop and mobile devices
-- **Visual Feedback**: Smooth animations and hover effects
-- **Toast Notifications**: User feedback for all actions
+## Credits
+- Built with [React](https://react.dev/), [Vite](https://vitejs.dev/), [Tailwind CSS](https://tailwindcss.com/)
+- UI icons by [Lucide](https://lucide.dev/)
+- Patterns inspired by [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
 
-## 🎯 Game Rules
 
-Conway's Game of Life follows these simple rules:
-1. **Underpopulation**: Live cells with < 2 neighbors die
-2. **Survival**: Live cells with 2-3 neighbors survive
-3. **Overpopulation**: Live cells with > 3 neighbors die
-4. **Reproduction**: Dead cells with exactly 3 neighbors become alive
-
-## 🎨 Interface
-
-The application features:
-- **Dark Theme**: Easy on the eyes with green cellular highlights
-- **Grid Visualization**: Interactive cells with hover effects
-- **Control Panel**: All controls organized in an intuitive sidebar
-- **Pattern Library**: Quick access to famous patterns
-- **Real-time Updates**: Live generation counter and status display
-
-## 🏗️ Technical Implementation
-
-- **React 18**: Modern React with hooks and functional components
-- **TypeScript**: Full type safety throughout the codebase
-- **Tailwind CSS**: Utility-first styling with custom animations
-- **Shadcn/UI**: High-quality UI components
-- **Local Storage**: Persistent state saving/loading
-- **Modular Architecture**: Clean separation of logic and UI
-
-## 🚀 Getting Started
-
-1. Open the application
-2. Use the **Pattern Library** to load a classic pattern (try "Glider" first!)
-3. Click **Start** to begin the simulation
-4. Adjust **Speed** to see evolution at your preferred pace
-5. **Stop** the simulation to manually edit cells
-6. Experiment with **Randomize** for unexpected patterns
-7. Use **Save State** to preserve interesting configurations
-
-This implementation demonstrates the power of AI-assisted development while showcasing one of the most famous cellular automata in computer science!
